@@ -7,11 +7,11 @@ import os
 from encryptor import *
 from typing import List, Tuple, Optional
 
-DIET_LIBC_PATH = os.environ.get("DIET_LIBC_PATH")
-if not DIET_LIBC_PATH:
-    print("Error: DIET_LIBC_PATH environment variable not set.")
-    print("Please set it to the root of your dietlibc installation.")
-    sys.exit(1)
+# DIET_LIBC_PATH = os.environ.get("DIET_LIBC_PATH")
+# if not DIET_LIBC_PATH:
+#     print("Error: DIET_LIBC_PATH environment variable not set.")
+#     print("Please set it to the root of your dietlibc installation.")
+#     sys.exit(1)
 
 LOADER_DIR = os.path.join(os.path.dirname(__file__), "loader")
 LOADER_BINARY = os.path.join(LOADER_DIR, "loader.elf")
